@@ -63,7 +63,7 @@ public static class Program
         var playerValue = (int)playerShape;
 
         if (opponentValue == playerValue) return RoundOutcome.Draw;
-        return (opponentValue == 3 ? 1 : opponentValue + 1) == playerValue
+        return opponentValue % 3 + 1 == playerValue
             ? RoundOutcome.Won
             : RoundOutcome.Lost;
     }
@@ -105,7 +105,7 @@ public static class Program
         var playerValue = outcome switch
         {
             RoundOutcome.Lost => opponentValue == 1 ? 3 : opponentValue - 1,
-            RoundOutcome.Won => opponentValue == 3 ? 1 : opponentValue + 1,
+            RoundOutcome.Won => opponentValue % 3 + 1,
             RoundOutcome.Draw => (int)opponentShape,
             _ => throw new UnreachableException()
         };
