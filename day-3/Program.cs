@@ -37,11 +37,7 @@ public static class Program
                 var secondCompartment = line[(line.Length / 2)..].ToHashSet();
 
                 firstCompartment.IntersectWith(secondCompartment);
-                var priorities = firstCompartment
-                    .Select(ToPriority)
-                    .First();
-
-                return priorities;
+                return ToPriority(firstCompartment.First());
             }).Sum();
 
         return summedPriorities;
