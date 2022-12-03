@@ -36,8 +36,8 @@ public static class Program
                 var firstCompartment = line[..(line.Length / 2)].ToHashSet();
                 var secondCompartment = line[(line.Length / 2)..].ToHashSet();
 
-                var intersection = firstCompartment.Intersect(secondCompartment).ToArray();
-                var priorities = intersection
+                firstCompartment.IntersectWith(secondCompartment);
+                var priorities = firstCompartment
                     .Select(ToPriority)
                     .First();
 
