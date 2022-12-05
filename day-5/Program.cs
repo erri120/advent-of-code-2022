@@ -55,15 +55,15 @@ public static class Program
         Console.WriteLine($"Part Two: {CreateMessage(stacksPartTwo)}");
     }
 
-    private static string CreateMessage(IReadOnlyDictionary<int, Stack<string>> stacks)
+    private static string CreateMessage(IReadOnlyDictionary<int, Stack<char>> stacks)
     {
         return stacks
             .Select(kv => kv.Value)
             .Select(stack => stack.First())
-            .Aggregate((a, b) => $"{a}{b}");
+            .Aggregate("", (a, b) => $"{a}{b}");
     }
 
-    private static IReadOnlyDictionary<int, Stack<string>> RunPart(string input, bool isPartOne)
+    private static IReadOnlyDictionary<int, Stack<char>> RunPart(string input, bool isPartOne)
     {
         var split = input.Split("\n\n", StringSplitOptions.RemoveEmptyEntries);
 
@@ -74,7 +74,7 @@ public static class Program
         return stacks;
     }
 
-    private static Dictionary<int, Stack<string>> CreateStacks(string input)
+    private static Dictionary<int, Stack<char>> CreateStacks(string input)
     {
         var lines = input.Split('\n', StringSplitOptions.RemoveEmptyEntries);
         var stackIDLine = lines.Last();
@@ -84,7 +84,7 @@ public static class Program
             .Select(c => int.Parse($"{c}"))
             .ToArray();
 
-        var stacks = stackIDs.ToDictionary(stackID => stackID, _ => new Stack<string>(lines.Length - 1));
+        var stacks = stackIDs.ToDictionary(stackID => stackID, _ => new Stack<char>(lines.Length - 1));
 
         var enumerable = lines.Take(lines.Length - 1).Reverse();
 
@@ -94,10 +94,10 @@ public static class Program
 
             foreach (var stackID in stackIDs)
             {
-                var crate = line.Substring(i + 1, 1);
+                var crate = line[i + 1];
                 i += 4;
 
-                if (string.IsNullOrWhiteSpace(crate)) continue;
+                if (crate == ' ') continue;
                 stacks[stackID].Push(crate);
             }
         }
@@ -114,7 +114,7 @@ public static class Program
     }
 
     private static void ApplyProceduresOnStacks(
-        IReadOnlyDictionary<int, Stack<string>> stacks,
+        IReadOnlyDictionary<int, Stack<char>> stacks,
         IEnumerable<RearrangementProcedure> procedures,
         bool isPartOne)
     {
