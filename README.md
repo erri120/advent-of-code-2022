@@ -18,7 +18,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | [4](./day-4/README.md) | [C#](./day-4/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-04/) |
 | [5](./day-5/README.md) | [C#](./day-5/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-05/) |
 | [6](./day-6/README.md) | [C#](./day-6/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-06/) |
-| 7 | - | - |
+| [7](./day-7/README.md) | [C#](./day-7/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-07/) |
 | 8 | - | - |
 | 9 | - | - |
 | 10 | - | - |
