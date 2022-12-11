@@ -12,15 +12,15 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 
 | Day | Code | Post |
 |-----|------|------|
-| [1](./day-1/README.md) | [C#](./day-1/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-01/) |
-| [2](./day-2/README.md) | [C#](./day-2/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-02/) |
-| [3](./day-3/README.md) | [C#](./day-3/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-03/) |
-| [4](./day-4/README.md) | [C#](./day-4/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-04/) |
-| [5](./day-5/README.md) | [C#](./day-5/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-05/) |
-| [6](./day-6/README.md) | [C#](./day-6/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-06/) |
-| [7](./day-7/README.md) | [C#](./day-7/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-07/) |
-| [8](./day-8/README.md) | [C#](./day-8/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-08/) |
-| [9](./day-9/README.md) | [C#](./day-9/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-09/) |
+| [1](./day-01/README.md) | [C#](./day-01/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-01/) |
+| [2](./day-02/README.md) | [C#](./day-02/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-02/) |
+| [3](./day-03/README.md) | [C#](./day-03/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-03/) |
+| [4](./day-04/README.md) | [C#](./day-04/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-04/) |
+| [5](./day-05/README.md) | [C#](./day-05/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-05/) |
+| [6](./day-06/README.md) | [C#](./day-06/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-06/) |
+| [7](./day-07/README.md) | [C#](./day-07/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-07/) |
+| [8](./day-08/README.md) | [C#](./day-08/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-08/) |
+| [9](./day-09/README.md) | [C#](./day-09/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-09/) |
 | [10](./day-10/README.md) | [C#](./day-10/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-10/) |
 | [11](./day-11/README.md) | [C#](./day-11/Program.cs) | [Link](https://erri120.github.io/posts/2022-12-11/) |
 | 12 | - | - |
